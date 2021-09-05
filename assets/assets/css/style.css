@@ -1,0 +1,26 @@
+body {
+  background: linear-gradient(337deg, #000000, #2f2d2d, #403e3e);
+  background-size: 600% 600%;
+  -webkit-animation: AnimationName 17s ease infinite;
+  -moz-animation: AnimationName 17s ease infinite;
+  -o-animation: AnimationName 17s ease infinite;
+  animation: AnimationName 17s ease infinite;
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 22% 0%;
+  }
+  50% {
+    background-position: 79% 100%;
+  }
+  100% {
+    background-position: 22% 0%;
+  }
+}
+
+#hmm:hover {
+  text-decoration: none;
+  color: rgb(255,0,0) !important;
+}
+

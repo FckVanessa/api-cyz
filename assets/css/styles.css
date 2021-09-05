@@ -1,0 +1,25 @@
+body {
+  background: linear-gradient(203deg, #1d1e1e, #393939, #3c3a3a);
+  background-size: 600% 600%;
+  -webkit-animation: gradient 8s ease infinite;
+  -moz-animation: gradient 8s ease infinite;
+  -o-animation: gradient 8s ease infinite;
+  animation: gradient 8s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 86% 0%;
+  }
+  50% {
+    background-position: 15% 100%;
+  }
+  100% {
+    background-position: 86% 0%;
+  }
+}
+
+a:hover {
+  text-decoration: none;
+}
+

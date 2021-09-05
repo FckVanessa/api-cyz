@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" style="width: 100%;height: 100%;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>QRator | Convert Your Text To QR Code</title>
+    <meta name="theme-color" content="rgb(48,48,48)">
+    <meta name="author" content="Ihsan Devs">
+    <meta name="twitter:title" content="QRator | Convert Your Text To QR Code">
+    <meta name="twitter:description" content="Generate your text to QR Code easily without registration, without ads and without any payment.">
+    <meta name="twitter:card" content="summary">
+    <meta property="og:image" content="assets/img/prev.jpg">
+    <meta name="description" content="Generate your text to QR Code easily without registration, without ads and without any payment.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:image" content="assets/img/prev.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/icon/favicon-16x16.png?h=e19542b90bba7fb12fdac4961a6c89b9">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/icon/favicon-32x32.png?h=24ad674493b55db7112842561453cefd">
+    <link rel="icon" type="image/png" sizes="180x180" href="assets/img/icon/apple-touch-icon.png?h=29e207c53c18344b9e502d7cdf38d206">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/icon/android-chrome-192x192.png?h=17ca5123d5591f75d3b4892830f0c60f">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/icon/android-chrome-512x512.png?h=d1950bcfeaa5e9fa74d8a59dd825cbb2">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="manifest" href="manifest.json?h=2ac221ff3433867b05eb5e06d48c31d9">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/buttonHover.css?h=b1e95067b6d1ba0ca2c0eaf0cc5a0aac">
+    <link rel="stylesheet" href="assets/css/footer.css?h=1bf73a888d2e396c94ccc9d4a8b8e406">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css?h=3f6bc8f513d888497b23e253cb58efd6">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
+</head>
+
+<body id="utama" style="width: 100%;height: 100%;">
+    <div class="text-center justify-content-center align-items-center" id="utama" style="padding: 0;padding-bottom: 40px;height: 100%;width: 100%;">
+        <h1 class="text-center" style="color: #bdbcb7;font-family: 'Lucida Console', Monaco, monospace;text-shadow: 0px 0px 0 rgb(164,163,158), -1px -1px 0 rgb(147,146,141), -2px -2px 0 rgb(129,128,123), -3px -3px 0 rgb(112,111,106), -4px -4px 0 rgb(95,94,89), -5px -5px 4px rgba(184,184,184,0.23), -5px -5px 1px rgba(184,184,184,0.5), 0px 0px 4px rgba(184,184,184,.2);margin-top: 40px;">QRator</h1>
+        <div class="input-group input-group-lg d-flex bounce animated" style="width: 80%;position: relative;margin: auto;margin-top: 70px;height: auto;"><input class="form-control" type="text" id="textQr" placeholder="Enter your text" autofocus="" autocomplete="off" style="font-size: 1rem;">
+            <div class="input-group-append"><button class="btn btn-primary" id="convert_button" type="button" style="font-size: 1rem;">Convert!</button></div>
+        </div><img class="img-fluid d-flex pulse animated" id="qrImage" src="https://api.qrserver.com/v1/create-qr-code/?data=Ihsan+Devs&amp;size=200x200&amp;margin=0" style="width: auto;height: auto;position: relative;border-radius: 10px;background: linear-gradient(145deg, #3f4a54, #4b5864);box-shadow: 20px 20px 60px #3c464f, -20px -20px 60px #515e6b;margin: auto;object-fit: contain;margin-top: 50px;" loading="eager"><!-- Start: Button Change Text on Hover --><a href="https://api.qrserver.com/v1/create-qr-code/?data=Ihsan+Devs&size=200x200&margin=0" id="download_image" target="_blank" style="text-decoration: none;"><button id="dl" class="button" type="button" data-hover="DOWNLOAD"><span>DOWNLOAD THIS IMAGE ?</span></button></a><!-- End: Button Change Text on Hover -->
+    </div><!-- Start: Footer with social media icons -->
+    <footer id="footerpad" style="width: 100%;height: auto;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-8 mx-auto">
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item"><a href="https://facebook.com/IhsanDeveloper" target="_blank"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse" style="border-radius: 56px;background: linear-gradient(145deg, #283848, #2f4256);box-shadow: 7px 7px 25px #253544, -7px -7px 25px #33475c;"></i></span></a></li>
+                        <li class="list-inline-item"><a href="https://twitter.com/IhsanDevs" target="_blank"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse" style="border-radius: 56px;background: linear-gradient(145deg, #283848, #2f4256);box-shadow: 7px 7px 25px #253544, -7px -7px 25px #33475c;"></i></span></a></li>
+                        <li class="list-inline-item"><a href="https://instagram.com/ihsan_devs" target="_blank"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-instagram fa-stack-1x fa-inverse" style="border-radius: 56px;background: linear-gradient(145deg, #283848, #2f4256);box-shadow: 7px 7px 25px #253544, -7px -7px 25px #33475c;"></i></span></a></li>
+                        <li class="list-inline-item"><a href="https://github.com/IhsanDevs" target="_blank"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-github fa-stack-1x fa-inverse" style="border-radius: 56px;background: linear-gradient(145deg, #283848, #2f4256);box-shadow: 7px 7px 25px #253544, -7px -7px 25px #33475c;"></i></span></a></li>
+                    </ul>
+                    <p class="copyright text-muted text-center">Made with 🤍 by Cyz Chan</p>
+                </div>
+            </div>
+        </div>
+    </footer><!-- End: Footer with social media icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js?h=799250ea82106486bf28468d9ca6aa51"></script>
+</body>
+
+</html>

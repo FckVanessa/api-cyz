@@ -1,0 +1,55 @@
+@keyframes gradientBackground {
+  0% {
+    background-position: 94% 0%;
+  }
+  50% {
+    background-position: 7% 100%;
+  }
+  100% {
+    background-position: 94% 0%;
+  }
+}
+
+#utama {
+  background: linear-gradient(224deg, #3c4b59, #585e64, #4d6277);
+  background-size: 600% 600%;
+  -webkit-animation: gradientBackground 10s ease infinite;
+  -moz-animation: gradientBackground 10s ease infinite;
+  -o-animation: gradientBackground 10s ease infinite;
+  animation: gradientBackground 10s ease infinite;
+}
+
+@keyframes gradientBackground {
+  0% {
+    background-position: 94% 0%;
+  }
+  50% {
+    background-position: 7% 100%;
+  }
+  100% {
+    background-position: 94% 0%;
+  }
+}
+
+#utama {
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+#utama::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.button {
+  display: flex;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.button a {
+  color: #fff;
+  text-decoration: none;
+}
+
